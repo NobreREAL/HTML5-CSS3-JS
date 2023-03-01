@@ -1,0 +1,147 @@
+:root{
+    --cor00:#061619;
+    --cor01:#0b1616;
+    --cor02:#17272b;
+    --cor03:#18252e;
+    --cor04:#42687f;
+
+    --cor00_g:#516d57;
+    --cor01_g:#161d15;
+    --cor02_g:#534c32;
+    --cor03_g:#2d3c39;
+}
+
+*{
+    padding:0px;
+    margin:0px;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:linear-gradient(63deg, var(--cor00), var(--cor01_g)) no-repeat fixed;
+    background-size:auto;
+}
+
+h1{
+    color:var(--cor00_g);
+}
+
+p{
+    color:var(--cor00_g);
+    line-height:1.25rem;
+}
+
+header.cabecario{
+    background-color:var(--cor00);
+    padding:1rem;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+button.cabecario__menu{
+    display:none;
+}
+
+a.link{
+    text-decoration:none;
+    padding:1.35rem;
+    border:0.25rem; 
+    color:var(--cor00_g);
+    font-size:1.25rem;
+    transition: color .2s ease-out, background-color .2s ease-out;
+}
+
+a.link:hover{
+    background-color:black;
+    color:white;
+    transition: color .2s ease-out, background-color .2s ease-out;
+}
+
+main.principal{
+    padding:1rem;
+}
+
+div.container{
+    display:flex;
+    padding:1rem;
+    flex-direction:row-reverse;
+    justify-content:center;
+    align-items: center;
+    background-color:rgba(49, 49, 49, 0.158);
+    border-radius:1rem;
+    box-shadow:0 0 1rem rgba(0, 0, 0, 0.397);
+}
+
+img.container__logo{
+    width:50%;
+    transition: transform .2s ease-in-out;
+}
+
+h1.container__titulo{
+    text-align:center;
+    margin:0 0 0.5rem 0;
+}
+
+p.container__frase{
+    text-align:justify;
+}
+
+@media (min-width:801px) and (max-width:1024px)
+{
+    img.container__logo{
+        transform:rotate(90deg);
+        transition: transform .2s ease-in-out;
+    }
+}
+
+@media (max-width:800px)
+{
+    div.container{
+        flex-direction:column;
+        gap:5rem;
+    }
+
+    img.container__logo{
+        margin:2rem 0 0 0;
+        width:70%;
+        transform:rotate(90deg);
+    }
+}
+
+@media (max-width:485px)
+{
+    header.cabecario{
+        display:flex;
+        flex-flow:column;
+    }
+
+    div.cabecario__container{
+        width:100%;
+        display:flex;
+        flex-flow:row wrap;
+        justify-content:space-between;
+        gap:1rem;
+    }
+
+    nav.cabecario__conteudos{
+        display:none;
+        flex-flow:column;
+    }
+
+    button.cabecario__menu{
+        display:block;
+        background:none;
+        border:none;
+    }
+
+    button.estilo{
+        color:var(--cor00_g);
+        font-size:2rem;
+        background-color:var(--cor00);
+    }
+
+    a.link{
+        text-align:center;      
+    }
+}
