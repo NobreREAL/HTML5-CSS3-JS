@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+:root{
+    --fontcolor1: black;
+    --fontcolor2: white;
+    --backgroundcolor1: #266FED;
+    --backgroundcolor2: rgb(175, 202, 236);
+    --fonttext1: "Inconsolata";
+    --fonttext2: "Tangerine";
+    --fonttext3: "Libre Baskerville"
+}
+
+*{
+    padding:0px;
+    margin:0px;
+}
+
+body{
+    font-family:var(--fonttext1);
+}
+
+.cabecario{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding:1.85rem 1rem;
+    background-color:var(--backgroundcolor2);
+}
+
+.pages__links{
+    text-decoration:none;
+    padding:1rem;
+    color:black;
+}
+
+.container{
+    height:100vh;
+    background:gray;
+}
+
+.container__principal{
+    display:flex;
+    flex-flow:row nowrap;
+    align-items: center;
+}
+
+.imagem__principal{
+    width:55%;
+    height:100vh;
+}
+
+.conteudo__principal{
+    height:100vh;
+    background-color:var(--backgroundcolor1);
+    display:flex;
+    flex-flow:column wrap;
+    justify-content:center;
+    align-items:left;
+    box-shadow:inset 0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+.conteudo__reservado{
+    padding:3rem;
+    font-family:var(--fonttext3);
+    color:var(--fontcolor2);
+    font-size:2rem;
+}
+
+.titulo__conteudo{
+    margin:0 0 5rem 0;
+}
+
+.frase__conteudo{
+    text-align:justify;
+    line-height:3rem;
+    margin: 0 0 3rem 0;
+}
+
+.link__conteudo{
+    color:var(--fontcolor1);
+    text-decoration:none;
+    padding:1.5rem;
+    background-color:white;
+    border-radius:2rem;
+    font-size:1.5rem;
+}
+
+@media (max-width:962px)
+{
+
+    .imagem__principal{
+        width:100%;
+    }
+
+    .container__principal{
+        flex-flow:column wrap;
+    }
+
+    .frase__conteudo{
+        margin:0 0 5rem 0;
+        line-height:5rem;
+    }
+
+    .link__conteudo{
+        margin:1rem 0 0 0;
+        padding:1.75rem;
+        font-size:3rem;
+    }
+
+}
+
+@media (max-width:640px)
+{
+
+    .cabecario{
+        padding:1.25rem 0.5rem;
+    }
+
+    .titulo__cabecario{
+        font-size:1rem;
+    }
+
+    .pages__links{
+        font-size:0.85rem;
+        padding:0.35rem;
+    }
+
+    .container__principal{
+        flex-flow:column wrap;
+    }
+
+    .titulo__conteudo{
+        margin: 0 0 1.5rem 0;
+        font-size:1.5rem;
+    }
+
+    .frase__conteudo{
+        line-height:1.25rem;
+        font-size:1.5rem;
+        margin: 0 0 1.5rem 0;
+    }
+
+    .frase__conteudo{
+        text-align:justify;
+        line-height:2rem;
+        margin: 0 0 1.5rem 0;
+    }
+    
+    .link__conteudo{
+        padding:1.5rem;
+        font-size:1rem;
+    }
+}
+
+@media (max-width:300px)
+{
+    .frase__conteudo{
+        line-height:1.5rem;
+    }
+}
