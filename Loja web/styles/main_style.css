@@ -100,7 +100,6 @@ body{
 
     .frase__conteudo{
         margin:0 0 5rem 0;
-        line-height:5rem;
     }
 
     .link__conteudo{
@@ -112,7 +111,7 @@ body{
 }
 
 
-@media (min-width:300px) and (max-width:414px) and (min-height:640) and (max-height:896)
+@media (min-width:300px) and (max-width:414px)
 
 {
 
@@ -121,7 +120,7 @@ body{
     }
 
     .titulo__cabecario{
-        font-size:1rem;
+        font-size:0.85rem;
     }
 
     .pages__links{
@@ -139,23 +138,13 @@ body{
     }
 
     .frase__conteudo{
-        line-height:1.25rem;
-        font-size:1.5rem;
-        margin: 0 0 1.5rem 0;
-    }
-
-    .frase__conteudo{
         text-align:justify;
-        line-height:2rem;
         margin: 0 0 1.5rem 0;
+        font-size:1rem;
     }
     
     .link__conteudo{
-        padding:1.5rem;
+        padding:0.85rem;
         font-size:1rem;
-    }
-
-    .frase__conteudo{
-        line-height:1.5rem;
     }
 }
