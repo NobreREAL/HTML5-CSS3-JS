@@ -111,7 +111,9 @@ body{
 
 }
 
-@media (max-width:640px)
+
+@media (min-width:300px) and (max-width:414px) and (min-height:640) and (max-height:896)
+
 {
 
     .cabecario{
@@ -152,10 +154,7 @@ body{
         padding:1.5rem;
         font-size:1rem;
     }
-}
 
-@media (max-width:300px)
-{
     .frase__conteudo{
         line-height:1.5rem;
     }
